@@ -1,0 +1,72 @@
+header{
+    background-image: url("./pics/stones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+body{
+    text-align: center;
+    background-color: antiquewhite;
+    
+    
+}
+
+h1 {
+    font-size: 65px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: antiquewhite
+}
+ 
+#main{
+    padding: 20px;
+}
+p, h2, #input, #submit,#deleteAll{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+}
+
+input[type="text"]{
+    height: 30px;
+    border: none;
+    
+}
+
+#submit:hover{
+    background-color: rgb(52, 196, 148)
+}
+
+#deleteAll:hover{
+    background-color: rgb(209, 49, 49);
+}
+.MyTasks {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px;
+    padding: 10px 25px;
+    border: none;
+    
+}
+
+#tasks{
+    list-style-type: none;
+}   
+
+
+.delete-icon:hover{
+    background-color: rgb(209, 49, 49);
+
+}
+
+.check-icon:hover{
+    background-color: rgb(52, 196, 148)
+}
+li{
+    font-size: 25px;
+}
+
+
+.completed {
+    color: grey;
+    text-decoration-line: line-through;
+}
