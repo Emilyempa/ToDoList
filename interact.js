@@ -10,8 +10,8 @@ document.querySelector('#submit').addEventListener('click', function() {
     //testing adding icons i js instead of html
     const checkIcon = document.createElement("img");
     checkIcon.src = "./pics/check.svg";
-    checkIcon.alt = "Check"
-    checkIcon.className = "check-icon"
+    checkIcon.alt = "Check";
+    checkIcon.className = "check-icon";
 
     const deleteIcon = document.createElement("img");
     deleteIcon.src = "./pics/delete.svg"; 
@@ -25,8 +25,8 @@ document.querySelector('#submit').addEventListener('click', function() {
         
     //checking if string is empty and if so adding an alert
     if (taskText.length == "") {
-        alert("Ooops you forgot to add a task!")
-        return
+        alert("Ooops you forgot to add a task!");
+        return;
     }
         //creating a list
         const li = document.createElement('li');
