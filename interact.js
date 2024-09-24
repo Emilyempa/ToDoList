@@ -54,7 +54,7 @@ document.querySelector('#submit').addEventListener('click', function() {
             document.querySelector('#tasks').innerHTML = '';
         });
         
-        //Working to make task complete or nor complete and counting tasks
+        //Working to make task complete or not complete and counting tasks
         checkIcon.addEventListener("click", function() {  
             li.classList.toggle("completed");
             if (li.classList.contains("completed")) {
