@@ -38,23 +38,23 @@ document.querySelector('#submit').addEventListener('click', function() {
         });
 
     
-        // adding icons to li-elementet
+        // adding icons to li
         li.appendChild(checkIcon);
         li.appendChild(deleteIcon);
 
-        // adding li-elementet to list
+        // adding input to list
         document.querySelector("#tasks").appendChild(li);
 
-        // clearing input and adding placeholder
+        // clearing input 
         taskInput.value = '';
         
         
-        // delete all tasks
+        // delete all tasks by adding listner
         deleteAll.addEventListener("click", function() {
             document.querySelector('#tasks').innerHTML = '';
         });
         
-        //Working to make task complete or nor complete and counting
+        //Working to make task complete or nor complete and counting tasks
         checkIcon.addEventListener("click", function() {  
             li.classList.toggle("completed");
             if (li.classList.contains("completed")) {
