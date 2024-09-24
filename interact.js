@@ -54,7 +54,7 @@ document.querySelector('#submit').addEventListener('click', function() {
             document.querySelector('#tasks').innerHTML = '';
         });
         
-        //Working to make task complete in HTML but not counting correct
+        //Working to make task complete or nor complete and counting
         checkIcon.addEventListener("click", function() {  
             li.classList.toggle("completed");
             if (li.classList.contains("completed")) {
