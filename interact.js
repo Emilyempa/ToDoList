@@ -3,7 +3,7 @@ const taskarray = [];
 let completedCount = 0;
 const alerting = document.querySelector("#alerting");
 const tasks = document.querySelector("#tasks");
-const taskInput = document.querySelector('#input');
+const taskInput = document.querySelector("#input");
 const deleteAll = document.querySelector("#deleteAll");
 
 document.querySelector('#submit').addEventListener('click', function() {
@@ -31,11 +31,11 @@ document.querySelector('#submit').addEventListener('click', function() {
         alerting.innerHTML = "";
     }
         //creating a list
-        const li = document.createElement('li');
+        const li = document.createElement("li");
         li.textContent = taskText;
             
         // adding listner to delete-icon
-        deleteIcon.addEventListener('click', function() {
+        deleteIcon.addEventListener("click", function() {
             li.remove();
         });
 
@@ -48,12 +48,12 @@ document.querySelector('#submit').addEventListener('click', function() {
         tasks.appendChild(li);
 
         // clearing input 
-        taskInput.value = '';
+        taskInput.value = "";
         
         
         // delete all tasks by adding listner
         deleteAll.addEventListener("click", function() {
-            tasks.innerHTML = '';
+            tasks.innerHTML = "";
         });
         
         //Working to make task complete or not complete and counting tasks
