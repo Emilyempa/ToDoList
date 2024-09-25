@@ -3,6 +3,8 @@ const taskarray = [];
 let completedCount = 0;
 const alerting = document.querySelector("#alerting");
 const tasks = document.querySelector("#tasks");
+const taskInput = document.querySelector('#input');
+const deleteAll = document.querySelector("#deleteAll");
 
 document.querySelector('#submit').addEventListener('click', function() {
     
@@ -18,11 +20,9 @@ document.querySelector('#submit').addEventListener('click', function() {
     deleteIcon.alt = "Delete";
     deleteIcon.className = "delete-icon";
 
-    const taskInput = document.querySelector('#input');
+   //getting text from input
     const taskText = taskInput.value;
-
-    const deleteAll = document.querySelector("#deleteAll");
-        
+            
     //checking if string is empty and if so adding an alert
     if (taskText.length == "") {
         alerting.innerHTML = "Ooops you forgot to write someting!";
@@ -76,7 +76,7 @@ document.querySelector('#submit').addEventListener('click', function() {
        
 
 
-    // add to array
+    // add object to array
     taskarray.push({ text: taskText, completed: false });
 });
 
