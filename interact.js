@@ -1,5 +1,5 @@
 
-const tasks = [];
+const taskarray = [];
 let completedCount = 0;
 const alerting = document.querySelector("#alerting")
 
@@ -77,7 +77,7 @@ document.querySelector('#submit').addEventListener('click', function() {
 
 
     // add to array
-    tasks.push({ text: taskText, completed: false });
+    taskarray.push({ text: taskText, completed: false });
 });
 
 
