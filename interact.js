@@ -1,7 +1,7 @@
 
-const tasks = []
+const tasks = [];
 let completedCount = 0;
-
+const alerting = document.querySelector("#alerting")
 
 
 document.querySelector('#submit').addEventListener('click', function() {
@@ -25,8 +25,10 @@ document.querySelector('#submit').addEventListener('click', function() {
         
     //checking if string is empty and if so adding an alert
     if (taskText.length == "") {
-        alert("Ooops you forgot to add a task!");
+        alerting.innerHTML = "Ooops you forgot to write someting!";
         return;
+    } else {
+        alerting.innerHTML = "";
     }
         //creating a list
         const li = document.createElement('li');
