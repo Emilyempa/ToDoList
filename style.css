@@ -1,72 +1,90 @@
 header{
     background-image: url("./pics/stones.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;/* dont know really what it does*/
     background-size: cover;
     padding: 100px 0;
+    border-radius: 5px; /* makes rounded corners  */
+    
 }
 
 body{
     text-align: center;
     background-color: antiquewhite;
-    
-    
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;  
 }
 
 h1 {
     font-size: 65px;
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    color: antiquewhite
+    color: antiquewhite;
+}
+
+h2{
+    font-size: 25px;
 }
  
 #main{
     padding: 20px;
+    
 }
-p, h2, #input, #submit,#deleteAll{
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+#input{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    border-style: hidden; 
 }
 
-input[type="text"]{
-    height: 30px;
-    border: none;
-    
+#input::placeholder{
+    color:rgba(0, 0, 0, 0.703);
 }
 
 #submit:hover{
-    background-color: rgb(52, 196, 148)
+    background-color: rgb(52, 196, 148); 
 }
 
 #deleteAll:hover{
     background-color: rgb(209, 49, 49);
 }
 .MyTasks {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-    border-radius: 5px;
-    background-color: white;
-    margin: 20px;
-    padding: 10px 25px;
-    border: none;
+    
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
     
 }
-
-#tasks{
-    list-style-type: none;
-}   
 
 
 .delete-icon:hover{
     background-color: rgb(209, 49, 49);
-
+    
 }
 
 .check-icon:hover{
-    background-color: rgb(52, 196, 148)
+    background-color: rgb(52, 196, 148);
 }
 li{
-    font-size: 25px;
+    font-size: 20px;
+    list-style-type:none;
+    
 }
 
 
 .completed {
     color: grey;
     text-decoration-line: line-through;
+}
+
+#input, #submit{
+    border-radius: 5px;
+    height: 30px;
+}
+
+footer{
+    background-image: url(./pics/stones.jpg);
+    color:antiquewhite;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+button{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
 }
