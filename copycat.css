@@ -2,8 +2,6 @@ html, body{
     height: 100%;
     background-image: linear-gradient(pink, salmon);
     background-repeat: no-repeat; 
-    /* background-size: cover; */
-    /* margin: 0;  */
     box-sizing: border-box;
    
 }
@@ -51,8 +49,8 @@ li{
     box-shadow: 5px 5px 5px rgb(244, 172, 172);
     margin: 0 auto; /* Centers my box horisontally */
     margin-top: 10px;
-    width: 40%; /* Makes the box work in big or small */
-    /*max-width: 1200px;  Maybe not needed */
+    width: 40%; /* Makes the box work in big or small browser*/
+    
     
 }
 
@@ -87,7 +85,7 @@ p{
 #input{
     border-radius: 3px;
     height: 25px;
-    /* font-size: 27px; Makes my inputbox stick out*/ 
+    /* font-size: 27px; Makes my inputbox stick out :( */ 
 }
 
 /* makes my input border blue when used to write in */
