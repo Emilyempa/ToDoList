@@ -3,7 +3,7 @@ let completedCount = 0;
 const alerting = document.querySelector("#alerting");
 const tasks = document.querySelector("#tasks");
 const taskInput = document.querySelector("#input");
-const deleteAll = document.querySelector("#deleteAll");
+// const deleteAll = document.querySelector("#deleteAll");
 
 document.querySelector('#submit').addEventListener('click', function() {
     
@@ -40,6 +40,15 @@ document.querySelector('#submit').addEventListener('click', function() {
             li.remove();
         });
 
+        // Tried this but still not working
+        //deleteIcon.addEventListener("click", function(){
+        //     if (li.classList.contains("completed")) {
+        //         completedCount--;
+        //         document.querySelector("#completedCount").innerHTML = completedCount + " completed";
+        //     }
+        //     li.innerHTML = "";
+        // })
+
     
         // adding icons to li
         // li.appendChild(checkIcon);
@@ -67,7 +76,7 @@ document.querySelector('#submit').addEventListener('click', function() {
                 completedCount--;
             }
 
-        
+           
         
         document.querySelector("#completedCount").innerHTML = completedCount + " completed";       
          
@@ -78,5 +87,6 @@ document.querySelector('#submit').addEventListener('click', function() {
 
 
     // add object to array
+    
     taskarray.push({ text: taskText, completed: false });
 });
