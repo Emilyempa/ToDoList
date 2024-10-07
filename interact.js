@@ -25,7 +25,7 @@ document.querySelector('#submit').addEventListener('click', function() {
             
     //checking if string is empty and if so adding an alert
     if (taskText.length == "") {
-        alerting.innerHTML = "Ooops you forgot to write someting!";
+        alerting.innerHTML = "Input must not be empty";
         return;
     } else {
         alerting.innerHTML = "";
@@ -52,9 +52,9 @@ document.querySelector('#submit').addEventListener('click', function() {
         
         
         // delete all tasks by adding listner
-        deleteAll.addEventListener("click", function() {
-            tasks.innerHTML = "";
-        });
+        // deleteAll.addEventListener("click", function() {
+        //     tasks.innerHTML = "";
+        // });
         
         //Working to make task complete or not complete and counting tasks
         checkIcon.addEventListener("click", function() {  
@@ -68,7 +68,7 @@ document.querySelector('#submit').addEventListener('click', function() {
 
         
         
-        document.querySelector("#completedCount").innerHTML = "Completed tasks: " + completedCount;       
+        document.querySelector("#completedCount").innerHTML = completedCount + " completed";       
          
          });
          
