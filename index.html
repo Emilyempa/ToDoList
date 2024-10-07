@@ -5,35 +5,32 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ToDo List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='style.css'> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='copycat.css'>
     
 <body class="top">
-    <header id="header">
-        <h1>ToDo List</h1>
-    </header>
-
     <div id="main">
-        <h2>Add task here</h2>
-        
-            <input type="text" id="input" name="input" placeholder="Write your task here">
-            <button id="submit" type="button">Add task</button>
+        <h1>My ToDo</h1>
+        <p id="completedCount"> 0 completed</p>
       
-    </div>
+             
+        <input type="text" id="input" name="input">
+        <button id="submit" type="button">OK</button>
+        
+        <p id="alerting"></p>
 
-    <p id="alerting"></p>
+        <div class="MyTasks">
+        
+            <ul id="tasks"> 
+            </ul>
 
-    <div class="MyTasks">
-        <h2>My tasks</h2>
-        <p id="completedCount"> Completed tasks:</p>
-        <ul id="tasks"> 
-        </ul>
+        <!-- <button id="deleteAll"><img src="./pics/delete.svg" alt="Delete"> Delete All Tasks</button> -->
+        </div> 
+    </div>    
+    
 
-        <button id="deleteAll"><img src="./pics/delete.svg" alt="Delete"> Delete All Tasks</button>
-    </div> 
-
-    <footer>This was fun!</footer> 
-
-    <script type= "text/javascript" src='interact.js'></script>
+    <!-- <script type= "text/javascript" src='interact.js'></script> -->
+    <script type= "text/javascript" src='new.js'></script>
     
 </body>
 </html>
