@@ -1,0 +1,137 @@
+html, body{
+    height: 100%;
+    background-image: linear-gradient(pink, salmon);
+    background-repeat: no-repeat; 
+    /* background-size: cover; */
+    /* margin: 0;  */
+    box-sizing: border-box;
+   
+}
+
+.completed {
+    color: grey;
+    text-decoration-line: line-through;
+    transition-delay: 0.5s;
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(+15px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+li{
+    font-size: 30px;
+    list-style-type:none;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: slideUp 0.2s ease-in 0s 1 normal both;
+}
+
+@keyframes flyInTop {
+    0%{
+        transform: translateY(-600px);
+    }
+    50%{
+        transform: translateY(+50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#main{
+    background-color: white;
+    text-align: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    animation: flyInTop 1s ease 0s 1 normal both;
+    box-shadow: 5px 5px 5px rgb(244, 172, 172);
+    margin: 0 auto; /* Centers my box horisontally */
+    margin-top: 10px;
+    width: 40%; /* Makes the box work in big or small */
+    /*max-width: 1200px;  Maybe not needed */
+    
+}
+
+p{
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+@keyframes blinking{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    
+}
+
+.blinkingAlert{
+    animation: blinking 0.4s linear 0s 2 normal both; 
+}
+
+#alerting{
+    color: red;
+    margin-block-start: 3px;
+    margin-block-end: 0;
+    font-style: italic;
+}
+
+
+
+#input{
+    border-radius: 3px;
+    height: 25px;
+    /* font-size: 27px; Makes my inputbox stick out*/ 
+}
+
+/* makes my input border blue when used to write in */
+#input:focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
+#submit{
+    height: 30px;
+    
+}
+
+#completedCount{
+    margin-block-start: 5px;
+    margin-block-end: 20px;
+}
+
+h1{
+    font-size: 55px;
+    margin: 5px 5px;
+     
+}
+
+@keyframes delayOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+h1,#completedCount{
+    animation: delayOpacity 1.5s ease-in 1s 1 normal both;
+}
+
+#input, #submit{
+    animation: delayOpacity 1s ease-in 1.5s 1 normal both;
+}
+
+.delete-icon{
+    opacity: 0.5;
+}
+.delete-icon:hover{
+    opacity: 1;
+}
