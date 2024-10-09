@@ -35,19 +35,12 @@ document.querySelector('#submit').addEventListener('click', function() {
         const li = document.createElement("li");
         li.textContent = taskText;
             
-        // adding listner to delete-icon
-        deleteIcon.addEventListener("click", function() {
+        // adding listner to delete-icon and event to stop cklicklistner to bubble out to li
+        deleteIcon.addEventListener("click", function(event) {
             li.remove();
+            event.stopPropagation();
         });
 
-        // Tried this but still not working
-        //deleteIcon.addEventListener("click", function(){
-        //     if (li.classList.contains("completed")) {
-        //         completedCount--;
-        //         document.querySelector("#completedCount").innerHTML = completedCount + " completed";
-        //     }
-        //     li.innerHTML = "";
-        // })
 
     
         // adding icons to li
@@ -66,7 +59,7 @@ document.querySelector('#submit').addEventListener('click', function() {
         //     tasks.innerHTML = "";
         // });
         
-        //Working to make task complete or not complete and counting tasks
+        //Working to make task complete or not complete and counting tasks, now on li before on checkIcon
         li.addEventListener("click", function() {  
             li.classList.toggle("completed");
             if (li.classList.contains("completed")) {
