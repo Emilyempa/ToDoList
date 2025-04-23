@@ -88,6 +88,11 @@ h2 {
   max-width: 800px;
 }
 
+.delete-icon {
+    position: relative;
+    margin: -0.35rem;
+}
+
 .delete-icon:hover {
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
