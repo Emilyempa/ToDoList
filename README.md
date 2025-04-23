@@ -1,6 +1,6 @@
-# ToDo List 📝
+# ToDo 📝
 
-Welcome to **ToDo List**, your simple yet powerful task management web application! This project is a combination of clean design and efficient functionality, built with the basics of **HTML**, **CSS**, and **JavaScript**. It's a great way to keep track of your tasks 🚀
+Welcome to **ToDo**, your simple yet powerful task management web application! This project is a combination of clean design and efficient functionality, built with the basics of **HTML**, **CSS**, and **JavaScript**. It's a great way to keep track of your tasks 🚀
 
 ---
 
