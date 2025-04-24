@@ -8,14 +8,14 @@ header {
 
 body {
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #e0deda;
   font-family: "Lora", serif;
   font-size: 2rem;
+  color: #18230F;
 }
 
 h1 {
-  font-size: 65px;
-  color: rgb(14, 14, 13);
+  font-size: 65px;  
 }
 
 h2 {
@@ -39,58 +39,24 @@ h2 {
   height: 3rem;
 }
 
-/* #submit {
-  background-color: #d4c9be;
-  width: 4rem;
-  font-family: "Lora", serif;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
+#alerting {
+  font-size: 1.4rem;
+  color: #ff0000;
 }
-
-#submit:hover {
-  background-color: #9f9c99;
-} */
-
-#alerting{
-    font-size: 1.4rem;
-    color:#FF0000;
-}
-
-/* #deleteAll {
-  background-color: #d4c9be;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
-  color: black;
-  font-family: "Lora", serif;
-  font-weight: bold;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-}
-
-#deleteAll:hover {
-  background-color: #FF0000;
-  color:antiquewhite;
-}
-
-#deleteAll img {
-  position: relative;
-  margin: -0.25rem;
-  margin-right: 0.4rem;
-} */
 
 .MyTasks {
-  background-color:antiquewhite;
+  background-color: transparent;
   margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 5px;
   padding-bottom: 20px;
-  border-radius: 0.4rem;  
+  border-radius: 0.4rem;
   max-width: 800px;
 }
 
 .delete-icon {
-    position: relative;
-    margin: -0.35rem;
+  position: relative;
+  margin: -0.35rem;
 }
 
 .delete-icon:hover {
@@ -120,17 +86,17 @@ li :hover {
 button {
   position: relative;
   font: inherit;
-  background-color: #f0f0f0;
+  background-color: #e3dcd3;
   border: 0;
-  color: #242424;
+  color: #4a4a4a;
   border-radius: 0.5em;
   font-size: 3rem;
   padding: 0.375em 1em;
   font-weight: 600;
-  text-shadow: 0 0.0625em 0 #fff;
-  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
-      0 0.125em 0 0 #e5e2e2, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
-      0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  text-shadow: 0 0.0625em 0 #fcf8f3;
+  box-shadow: inset 0 0.0625em 0 0 #f5f0ea, 0 0.0625em 0 0 #ece6de,
+    0 0.125em 0 0 #e1dbd3, 0 0.25em 0 0 #d8d1c9, 0 0.3125em 0 0 #cfc8c0,
+    0 0.375em 0 0 #c6bfb7, 0 0.425em 0 0 #bcb6ad, 0 0.425em 0.5em 0 #b3aca4;
   transition: 0.25s ease;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -140,9 +106,9 @@ button {
 button:active,
 button:hover {
   transform: translateY(0.225em);
-  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
-      0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-      0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+  box-shadow: inset 0 0.03em 0 0 #f5f0ea, 0 0.03em 0 0 #ece6de,
+    0 0.0625em 0 0 #e1dbd3, 0 0.125em 0 0 #d8d1c9, 0 0.125em 0 0 #cfc8c0,
+    0 0.2em 0 0 #c6bfb7, 0 0.225em 0 0 #bcb6ad, 0 0.225em 0.375em 0 #b3aca4;
 }
 
 button:active:after,
@@ -150,12 +116,12 @@ button:hover:after {
   height: calc(100% + 0.225em);
 }
 
-#deleteAll{
+#deleteAll {
   font-size: 1.5rem;
 }
 
-#submit{
-  font-size: 1.3rem;  
+#submit {
+  font-size: 1.3rem;
 }
 
 button:after {
@@ -195,7 +161,7 @@ button:after {
   #submit {
     width: 3rem;
   }
-  
+
   #deleteAll {
     padding: 5px;
     font-size: 15px;
