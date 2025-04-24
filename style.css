@@ -39,7 +39,7 @@ h2 {
   height: 3rem;
 }
 
-#submit {
+/* #submit {
   background-color: #d4c9be;
   width: 4rem;
   font-family: "Lora", serif;
@@ -49,14 +49,14 @@ h2 {
 
 #submit:hover {
   background-color: #9f9c99;
-}
+} */
 
 #alerting{
     font-size: 1.4rem;
     color:#FF0000;
 }
 
-#deleteAll {
+/* #deleteAll {
   background-color: #d4c9be;
   border-radius: 5px;
   padding: 10px;
@@ -76,7 +76,7 @@ h2 {
   position: relative;
   margin: -0.25rem;
   margin-right: 0.4rem;
-}
+} */
 
 .MyTasks {
   background-color:antiquewhite;
@@ -115,6 +115,59 @@ li :hover {
 .delete-icon {
   padding-left: 1rem;
   height: 2rem;
+}
+
+button {
+  position: relative;
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 3rem;
+  padding: 0.375em 1em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+      0 0.125em 0 0 #e5e2e2, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+      0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.25s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:active,
+button:hover {
+  transform: translateY(0.225em);
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+      0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+      0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+
+button:active:after,
+button:hover:after {
+  height: calc(100% + 0.225em);
+}
+
+#deleteAll{
+  font-size: 1.5rem;
+}
+
+#submit{
+  font-size: 1.3rem;  
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 0.375em);
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: height 0.25s ease;
 }
 
 @media (max-width: 600px) {
